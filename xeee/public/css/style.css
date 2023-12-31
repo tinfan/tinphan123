@@ -1,0 +1,109 @@
+                                        .street {
+                                    background-image: url("/public/image/street.jpg");
+                                    background-size: auto;
+                                    height: 360px;
+                                    padding: 20px;
+                                }
+                                
+                                .traffic_light {
+                                    display: flex;
+                                }
+                                
+                                #red {
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 28px;
+                                    z-index: 2;
+                                    margin: 5px;
+                                    border: 3px solid black;
+                                }
+                                
+                                #yellow {
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 28px;
+                                    margin: 5px;
+                                    z-index: 2;
+                                    border: 3px solid black;
+                                }
+                                
+                                #green {
+                                    width: 50px;
+                                    height: 50px;
+                                    border-radius: 28px;
+                                    margin: 5px;
+                                    z-index: 2;
+                                    border: 3px solid black;
+                                }
+                                
+                                .box {
+                                    width: 250px;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 10px;
+                                    border-radius: 20px;
+                                    position: relative;
+                                }
+                                
+                                button {
+                                    margin: 10px;
+                                    padding: 10px;
+                                    background: black;
+                                    color: white;
+                                    border-radius: 5px;
+                                }
+                                
+                                #car_1 {
+                                    margin-bottom: 30px;
+                                }
+                                
+                                .btn {
+                                    width: 200px;
+                                    margin: auto;
+                                }
+                                
+                                .end {
+                                    width: 20px;
+                                    height: 390px;
+                                    background: yellow;
+                                    float: right;
+                                    margin: -338px 58px;
+                                }
+                                
+                                #xang1 {
+                                    width: 100px;
+                                    background: green;
+                                    height: 10px;
+                                }
+                                
+                                #xang2 {
+                                    width: 100px;
+                                    background: green;
+                                    height: 10px;
+                                    .car_runing {
+                                        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
+                                        transform: translate3d(0, 0, 0);
+                                        backface-visibility: hidden;
+                                        perspective: 1000px;
+                                    }
+                                    @keyframes shake {
+                                        10%,
+                                        90% {
+                                            transform: translate3d(0, -1px, 0);
+                                        }
+                                        20%,
+                                        80% {
+                                            transform: translate3d(0, 1px, 0);
+                                        }
+                                        30%,
+                                        50%,
+                                        70% {
+                                            transform: translate3d(0, -1px, 0);
+                                        }
+                                        40%,
+                                        60% {
+                                            transform: translate3d(0, 1px, 0)
+                                        }
+                                    }
+                                }
+                                
